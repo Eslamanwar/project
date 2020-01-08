@@ -1,0 +1,16 @@
+all:
+    hosts:
+        10.0.10.165:
+        10.0.22.250:
+        10.0.21.121:
+    vars:
+        repo_url: ssh://git@github.com:Eslamanwar
+        repo: django_ansible
+        home_dir: /home/ubuntu
+        repo_dir: "{{ home_dir }}/{{ repo }}"
+        django_dir: "{{ repo_dir }}/django"
+        static_dir: "{{ home_dir }}/static"
+        django_project: django_ansible
+        dbname: demodb
+        dbuser: user
+        dbpassword: YourPwdShouldBeLongAndSecure
